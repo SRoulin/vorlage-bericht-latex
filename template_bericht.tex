@@ -7,7 +7,7 @@ a4paper,     %% defines the paper size: a4paper (default), a5paper, letterpaper,
 % twoside,     %% changes to a two-page-layout (alternatively: oneside)
 % twocolumn,   %% changes to a two-column-layout
 headsepline, %% add a horizontal line below the column title
-footsepline, %% add a horizontal line above the page footer
+%footsepline, %% add a horizontal line above the page footer
 % titlepage,   %% only the titlepage (using titlepage-environment) appears on the first page (alternatively: notitlepage)
 % parskip,     %% insert an empty line between two paragraphs (alternatively: halfparskip, ...)
 % leqno,       %% equation numbers left (instead of right)
@@ -38,7 +38,7 @@ footsepline, %% add a horizontal line above the page footer
 %\usepackage[ngerman]{babel}
 
 %%% inputenc: coding of german special characters
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 
 %%% fontenc, ae, aecompl: coding of characters in PDF documents
 \usepackage[T1]{fontenc}
@@ -49,13 +49,13 @@ footsepline, %% add a horizontal line above the page footer
 %%%
 
 %%% amsmath, amssymb, amstext: support for mathematics
-%\usepackage{amsmath,amssymb,amstext}
+\usepackage{amsmath,amssymb,amstext}
 
 %%% psfrag: replace PostScript fonts
 \usepackage{psfrag}
 
 %%% listings: include programming code
-%\usepackage{listings}
+\usepackage{listings}
 
 %%% units: technical units
 %\usepackage{units}
@@ -172,16 +172,11 @@ footsepline, %% add a horizontal line above the page footer
 %%% title
 \title{
 	\vspace{0.5cm}
-	\includegraphics[scale=0.1]{htl-logo.jpg} \\
+	\includegraphics[scale=0.15]{htl-logo.jpg} \\
 	\TITLE}
 
 %%% one author
-\author{Firstname Lastname \\ \SUBJECT \\ \CLASS \\ \GROUP} 
-
-%%% more authors
-%\author{First Author (Matrikelnummer)  \and
-%Second Author (Matrikelnummer)        \and
-%Third Author (Matrikelnummer)}
+\author{Vorname Nachname \\ \SUBJECT \\ \CLASS \\ \GROUP} 
 
 %%% date
 \date{Shkoder, am \today{}}
@@ -243,6 +238,9 @@ footsepline, %% add a horizontal line above the page footer
  %\newpage
  %\listoftables
 
+%%% no pagenumber on the titlepage
+\thispagestyle{empty}
+
 %%% display the main document on a new page 
  \newpage
 
@@ -253,17 +251,17 @@ footsepline, %% add a horizontal line above the page footer
 %%% begin main document
 %%% structure: \section \subsection \subsubsection \paragraph \subparagraph
 %%%
-\section{First Heading}
+\section{Erste \"Uberschrift}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-\subsection{Second Heading}
+\subsection{Zweite \"Uberschrift}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 \newpage
-\section{Another First Heading}
+\section{Weitere erste \"Uberschrift}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-\subsection{Another Second Heading}
+\subsection{Weitere zweite \"Uberschrift}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 %%%
